@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Nortex</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!--[if IE 9]>
+    <link rel="stylesheet" href="../css/styleIE.css" />
+    <![endif]-->
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script>
+        $(function(){
+            $('.menu ul li').hover(
+                    function() {
+                        $(this).addClass("active");
+                        $(this).find('ul:first').stop(true, true); // останавливаем всю текущую анимацию
+                        $(this).find('ul:first').slideDown();
+                    },
+                    function() {
+                        $(this).removeClass("active");
+                        $(this).find('ul:first').slideUp('fast');
+                    }
+            );
+        })
+    </script>
+</head>
+
+<body>
+<div class="black-line"></div>
+<div class="container">
+    <div class="hdr line">
+        <div class="hdr__logo">
+            <a href="Index.html"><img src="../i/hdr-logo.png"></a>
+        </div>
+        <div class="menu">
+            <ul class="menu_list">
+                <li><a href="Products.html">ПРОДУКЦИЯ</a></li>
+                <li><a href="">КЛИЕНТСКАЯ ПОДДЕРЖКА</a>
+                    <ul>
+                        <li><a href="Faq.html">Часто задаваемые вопросы</a></li>
+                        <li><a href="#">Сравнение типов продукции</a></li>
+                        <li><a href="#">Советы по эксплуатации</a></li>
+                        <li><a href="#">Руководства по установке</a></li>
+                    </ul>
+                </li>
+                <li><a href="">О КОМПАНИИ</a></li>
+                <li><a href="">КОНТАКТЫ</a></li>
+            </ul>
+        </div>
+        <div class="search">
+                <div class="search__item"><input class="b-input" type="text" value=""/></div>
+                <a class="btn btn_grey">НАЙТИ</a>
+        </div>
+    </div>
+
+    <div class="cnt">
+        <div class="cnt__news cnt__news_search">
+            <h1>Результаты поиска</h1>
+            <div class="cnt__search line">
+                <div class="search__item"><input class="b-input" type="text" value="электрический камин"/></div>
+                <a class="btn btn_grey">НАЙТИ</a>
+            </div>
+
+            <div class="cnt__search-item line">
+                <div class="cnt__search-num">
+                    1
+                </div>
+                <div class="cnt__search-text">
+                    <a href="#">Камины электрические 220 v для квартиры</a>
+                    <p>Современные технологии позволяют точно имитировать натуральное пламя, а интересные дизайнерские решения превращают <span class="g-yellow">электрические камины</span> в выразительные элементы домашнего или делового интерьера. Большинство электрокаминов снабжены дистанционным пультом управления, а впечатляющее многообразие моделей позволяет подбирать устройство под технические возможности конкретных помещений и вкусовые запросы пользователя.</p>
+                </div>
+            </div>
+
+            <div class="cnt__search-item line">
+                <div class="cnt__search-num">
+                    2
+                </div>
+                <div class="cnt__search-text">
+                    <a href="#"><span class="g-yellow">Электрический камин</span> Napoleon EFL80</a>
+                    <p>Сверхширокий электро очаг оснащен встроенным тепловентилятором мощностью 2 кВт. Возможность выбора одного из двух режимов обогрева. Очаг с мерцающими объемными дровами и реалистичным пламенем создаст уютную и теплую атмосферу в доме. Управление производится с помощью пульта ДУ. Имитация тлеющих дров. Термостат.</p>
+                </div>
+            </div>
+            <div class="cnt__search-item line">
+                <div class="cnt__search-num">
+                    3
+                </div>
+                <div class="cnt__search-text">
+                    <a href="#"><span class="g-yellow">Электрический камин</span> Napoleon EFL90</a>
+                    <p>Сверхширокий электро очаг оснащен встроенным тепловентилятором мощностью 2 кВт. Возможность выбора одного из двух режимов обогрева. Очаг с мерцающими объемными дровами и реалистичным пламенем создаст уютную и теплую атмосферу в доме. Управление производится с помощью пульта ДУ. Имитация тлеющих дров. Термостат.</p>
+                </div>
+            </div>
+            <div class="cnt__search-item line">
+                <div class="cnt__search-num">
+                    4
+                </div>
+                <div class="cnt__search-text">
+                    <a href="#"><span class="g-yellow">Электрический камин</span> Napoleon EFL125</a>
+                    <p>Сверхширокий электро очаг оснащен встроенным тепловентилятором мощностью 2 кВт. Возможность выбора одного из двух режимов обогрева. Очаг с мерцающими объемными дровами и реалистичным пламенем создаст уютную и теплую атмосферу в доме. Управление производится с помощью пульта ДУ. Имитация тлеющих дров. Термостат.</p>
+                </div>
+            </div>
+            <div class="cnt__search-item line">
+                <div class="cnt__search-num">
+                    5
+                </div>
+                <div class="cnt__search-text">
+                    <a href="#"><span class="g-yellow">Электрический камин</span> Napoleon EFL200</a>
+                    <p>Сверхширокий электро очаг оснащен встроенным тепловентилятором мощностью 2 кВт. Возможность выбора одного из двух режимов обогрева. <span class="g-yellow">Электрический камин</span> с мерцающими объемными дровами и реалистичным пламенем создаст уютную и теплую атмосферу в доме. Управление производится с помощью пульта ДУ. Имитация тлеющих дров. Термостат.
+                    </p>
+                </div>
+            </div>
+            <div class="cnt__search-item line">
+                <div class="cnt__search-num">
+                    6
+                </div>
+                <div class="cnt__search-text">
+                    <a href="#"><span class="g-yellow">Электрический камин</span> Napoleon EFL220</a>
+                    <p>Сверхширокий электро очаг оснащен встроенным тепловентилятором мощностью 2 кВт. Возможность выбора одного из двух режимов обогрева. Очаг с мерцающими объемными дровами и реалистичным пламенем создаст уютную и теплую атмосферу в доме. Управление производится с помощью пульта ДУ. Имитация тлеющих дров. Термостат.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ftr-i ">
+    <div class="ftr line">
+        <div class="ftr__copyright"><span class="ftr__copyright-text">&copy; Нортех, 2012</span></div>
+        <div class="ftr__studio"><i class="ico ico_type_studio"></i><div class="ftr__studio-name"><a href="#">Создание сайта</a> —<br/> ИА Кельник</div></div>
+    </div>
+
+    <div class="coursemap">
+        <div class="coursemap__btn">
+            <div class="coursemap__btn-text"><a href="#"><i class="ico ico_type_coursemap ico_type_coursemap-active"></i><span class="coursemap__btn-dotted">Карта сайта</span></a></div>
+        </div>
+
+        <div class="coursemap__content">
+            <div class="coursemap__inside">
+                <div class="coursemap__block">
+                    <ul>
+                        <li class="coursemap_first-line"><a href="#">Продукция</a></li>
+                        <li><a href="#">Электрические камины</a></li>
+                        <li><a href="#">Газовые камины</a></li>
+                        <li><a href="#">Газовые вставки</a></li>
+                        <li><a href="#">Печи на газу</a></li>
+                        <li><a href="#">Дровяные камины</a></li>
+                        <li><a href="#">Деревянные вставки</a></li>
+                        <li><a href="#">Дровяные печи</a></li>
+                        <li><a href="#">Камины на этаноле</a></li>
+                        <li><a href="#">Паллетные камины</a></li>
+                    </ul>
+                </div>
+                <div class="coursemap__block">
+                    <ul class="coursemap__block-cntr">
+                        <li class="coursemap_first-line"><a href="#">Клиентская поддержка</a></li>
+                        <li><a href="#">Часто задаваемые вопросы</a></li>
+                        <li><a href="#">Сравнение типов продукции</a></li>
+                        <li><a href="#">Советы по эксплуатации</a></li>
+                        <li><a href="#">Руководства по установке</a></li>
+                    </ul>
+                    <ul>
+                        <li class="coursemap_first-line"><a href="#">О компании</a></li>
+                        <li><a href="#">Почему стоит выбрать Napoleon</a></li>
+                        <li><a href="#">Пресс-центр</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                    </ul>
+                </div>
+
+                <div class="coursemap__block">
+                    <ul>
+                        <li class="coursemap_first-line"><a href="#">Контакты</a></li>
+                        <li><a href="#">Где купить</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Nortex Contact</title>
+<link rel="stylesheet" href="../css/style.css" />
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!--[if IE 9]>
+    <link rel="stylesheet" href="../css/styleIE.css" />
+    <![endif]-->
+
+    <script>
+    $(function(){
+        $("#toTop").click(function(e) {
+            $("html:not(:animated),body:not(:animated)").animate({ scrollTop:$("#box-form").position().top}, 500 );
+            e.preventDefault();
+        });
+        $('.menu ul li').hover(
+                function() {
+                    $(this).addClass("active");
+                    $(this).find('ul:first').stop(true, true); // останавливаем всю текущую анимацию
+                    $(this).find('ul:first').slideDown();
+                },
+                function() {
+                    $(this).removeClass("active");
+                    $(this).find('ul:first').slideUp('fast');
+                }
+        );
+    });
+</script>
+</head>
+
+<body>
+<div class="black-line"></div>
+<div class="container">
+	<div class="hdr line">
+        <div class="hdr__logo">
+            <a href="Index.html"><img src="../i/hdr-logo.png"></a>
+        </div>
+        <div class="menu">
+            <ul class="menu_list">
+                <li><a href="Products.html">ПРОДУКЦИЯ</a></li>
+                <li><a href="">КЛИЕНТСКАЯ ПОДДЕРЖКА</a>
+                    <ul>
+                        <li><a href="Faq.html">Часто задаваемые вопросы</a></li>
+                        <li><a href="#">Сравнение типов продукции</a></li>
+                        <li><a href="#">Советы по эксплуатации</a></li>
+                        <li><a href="#">Руководства по установке</a></li>
+                    </ul>
+                </li>
+                <li><a href="">О КОМПАНИИ</a></li>
+                <li><a href="">КОНТАКТЫ</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <div class="search__item"><input class="b-input" type="text" value=""/></div>
+            <a class="btn btn_grey">НАЙТИ</a>
+        </div>
+    </div>
+
+    <div class="cnt">
+        <div class="cnt__main line">
+            <div class="cnt__case contacts">
+                <h1>Где купить</h1>
+                <div class="ask">
+                    <i class="ico ico_type_ask"></i>
+                    <div class="ask__data">
+                        Есть вопросы? <br />
+                        <a id="toTop" href="#" class="b-link"><span class="b-link__inner">Свяжитесь с нами!</span></a>
+                    </div>
+                </div>
+                <div class="contacts__data">
+                    <p>В наших авторизированных центрах вы сможете купить камины, печи или другую продукцию. Специалисты центров с радостью помогут вам решить любые проблемы, которые могут возникнуть у вас.</p>
+                </div>
+
+                <div class="contacts__ttl">Официальные дистрибьюторы</div>
+
+                <div class="contacts__block">
+                    <div class="contacts__ttl">в Санкт-Петербурге</div>
+                    <div class="contacts__name">ООО "Нортех"</div>
+                    <div class="contacts__address"><a id="spb-address" href="#" class="b-link"><span class="b-link__inner">Пр. Медиков, д. 9 пом. 19Н</span></a></div>
+                    <div class="contacts__phone">Тел./факс 812 327-50-19</div>
+                    <div class="contacts__phone">Тел. 812 324-25-61</div>
+                    <div class="contacts__email"><a href="mailto:#">info@nortech.ru</a></div>
+                </div>
+                <div class="contacts__block">
+                    <div class="contacts__ttl">в Москве</div>
+                    <div class="contacts__name">ООО "Нортех"</div>
+                    <div class="contacts__address"><a id="moscow-address" href="#" class="b-link"><span class="b-link__inner">ул. Староалексеевская, д. 5</span></a></div>
+                    <div class="contacts__phone">Тел./факс 495 987-42-11</div>
+                    <div class="contacts__email"><a href="mailto:#">kamin@nortech.ru</a></div>
+                </div>
+
+                <div class="b-map">
+                    <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+                    <div id="ymaps-map-id_135903670358874776401" style="width: 100%; height: 485px;"></div>
+                    <div style="display:none;"><a href="http://api.yandex.ru/maps/tools/constructor/index.xml" target="_blank" style="color: #1A3DC1; font: 13px Arial, Helvetica, sans-serif;">Создано с помощью инструментов Яндекс.Карт</a></div>
+                    <script type="text/javascript">
+                        function fid_135903670358874776401(ymaps) {
+                            var map = new ymaps.Map("ymaps-map-id_135903670358874776401", {
+                                center: [40.458821, 58.015261],
+                                zoom: 5,
+                                type: "yandex#map"
+                            });
+                            map.controls
+                                    .add("zoomControl")
+                                    .add("mapTools")
+                                    .add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));
+
+                            //Moscow
+                            var myPlacemark1 = new ymaps.Placemark([37.64507, 55.810471], {
+                                balloonContent: '<div class="contacts__block contacts__block-map"><div class="contacts__name">ООО "Нортех"</div><div class="contacts__address"><span class="">ул. Староалексеевская, д. 5</span></div><div class="contacts__phone">Тел./факс 495 987-42-11</div><div class="contacts__email"><a href="mailto:#">kamin@nortech.ru</a></div></div>'
+                            }, {
+                                iconImageHref: 'http://z-index.com.ua/Content/img/map-icon.png', // картинка иконки
+                                iconImageSize: [44, 55], // размеры картинки
+                                iconImageOffset: [-23, -53] // смещение картинки
+                            });
+
+                            //SPB
+                            var myPlacemark2 =new ymaps.Placemark([30.315617, 59.970632], {
+                                balloonContent: '<div class="contacts__block contacts__block-map"><div class="contacts__name">ООО "Нортех"</div><div class="contacts__address"><span class="">Пр. Медиков, д. 9 пом. 19Н</span></div><div class="contacts__phone">Тел./факс 812 327-50-19</div><div class="contacts__phone">Тел. 812 324-25-61</div><div class="contacts__email"><a href="mailto:#">info@nortech.ru</a></div></div>'
+                            }, {
+                                iconImageHref: 'http://z-index.com.ua/Content/img/map-icon.png', // картинка иконки
+                                iconImageSize: [44, 55], // размеры картинки
+                                iconImageOffset: [-23, -53] // смещение картинки
+                            });
+
+                            //adding placemarks to our map
+                            map.geoObjects.add(myPlacemark1);
+                            map.geoObjects.add(myPlacemark2);
+
+                            $(function(){
+                                $('#moscow-address').click(function(e){
+                                    myPlacemark1.balloon.open();
+
+                                    e.preventDefault();
+                                });
+                                $('#spb-address').click(function(e){
+                                    myPlacemark2.balloon.open();
+
+                                    e.preventDefault();
+                                });
+                            });
+
+                        }
+                    </script>
+                    <script type="text/javascript" src="http://api-maps.yandex.ru/2.0-stable/?lang=ru-RU&coordorder=longlat&load=package.full&wizard=constructor&onload=fid_135903670358874776401"></script>
+                    <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+                </div>
+
+                <div id="box-form" class="box">
+                    <div class="form">
+                        <div class="form__ttl">Свяжитесь с нами</div>
+                        <div class="form__field line">
+                            <div class="form__left"><label class="b-label">Представьтесь</label></div>
+                            <div class="form__right">
+                                <div class="b-input-i">
+                                    <input type="text" class="b-input" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__field line">
+                            <div class="form__left"><label class="b-label">Почта</label></div>
+                            <div class="form__right">
+                                <div class="b-input-i">
+                                    <input type="text" class="b-input" />
+                                </div>
+                                <div class="form__info">На введенный адрес вышлем ответ</div>
+                            </div>
+                        </div>
+                        <div class="form__field line">
+                            <div class="form__left"><label class="b-label">Тема</label></div>
+                            <div class="form__right">
+                                <div class="b-input-i">
+                                    <input type="text" class="b-input" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__field line">
+                            <div class="form__left"><label class="b-label">Сообщение</label></div>
+                            <div class="form__right">
+                                <div class="b-input-i">
+                                    <textarea class="b-ta"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box__action">
+                            <div class="form__field line">
+                                <div class="form__right">
+                                    <a class="btn btn_red btn_disable" href="#">ОТПРАВИТЬ СООБЩЕНИЕ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="ftr-i">
+    <div class="ftr line">
+        <div class="ftr__copyright"><span class="ftr__copyright-text">&copy; Нортех, 2012</span></div>
+        <div class="ftr__studio"><i class="ico ico_type_studio"></i><div class="ftr__studio-name"><a href="#">Создание сайта</a> —<br/> ИА Кельник</div></div>
+    </div>
+
+    <div class="coursemap">
+        <div class="coursemap__btn">
+            <div class="coursemap__btn-text"><a href="#"><i class="ico ico_type_coursemap ico_type_coursemap-active"></i><span class="coursemap__btn-dotted">Карта сайта</span></a></div>
+        </div>
+
+        <div class="coursemap__content">
+            <div class="coursemap__inside">
+                <div class="coursemap__block">
+                    <ul>
+                        <li class="coursemap_first-line"><a href="#">Продукция</a></li>
+                        <li><a href="#">Электрические камины</a></li>
+                        <li><a href="#">Газовые камины</a></li>
+                        <li><a href="#">Газовые вставки</a></li>
+                        <li><a href="#">Печи на газу</a></li>
+                        <li><a href="#">Дровяные камины</a></li>
+                        <li><a href="#">Деревянные вставки</a></li>
+                        <li><a href="#">Дровяные печи</a></li>
+                        <li><a href="#">Камины на этаноле</a></li>
+                        <li><a href="#">Паллетные камины</a></li>
+                    </ul>
+                </div>
+                <div class="coursemap__block">
+                        <ul class="coursemap__block-cntr">
+                            <li class="coursemap_first-line"><a href="#">Клиентская поддержка</a></li>
+                            <li><a href="#">Часто задаваемые вопросы</a></li>
+                            <li><a href="#">Сравнение типов продукции</a></li>
+                            <li><a href="#">Советы по эксплуатации</a></li>
+                            <li><a href="#">Руководства по установке</a></li>
+                        </ul>
+                        <ul>
+                            <li class="coursemap_first-line"><a href="#">О компании</a></li>
+                            <li><a href="#">Почему стоит выбрать Napoleon</a></li>
+                            <li><a href="#">Пресс-центр</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                        </ul>
+                </div>
+
+                <div class="coursemap__block">
+                        <ul>
+                            <li class="coursemap_first-line"><a href="#">Контакты</a></li>
+                            <li><a href="#">Где купить</a></li>
+                            <li><a href="#">Обратная связь</a></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

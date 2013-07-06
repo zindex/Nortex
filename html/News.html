@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Nortex index</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!--[if IE 9]>
+    <link rel="stylesheet" href="../css/styleIE.css" />
+    <![endif]-->
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script>
+        $(function(){
+            $('.menu ul li').hover(
+                    function() {
+                        $(this).addClass("active");
+                        $(this).find('ul:first').stop(true, true); // останавливаем всю текущую анимацию
+                        $(this).find('ul:first').slideDown();
+                    },
+                    function() {
+                        $(this).removeClass("active");
+                        $(this).find('ul:first').slideUp('fast');
+                    }
+            );
+        })
+    </script>
+</head>
+
+<body>
+<div class="black-line"></div>
+<div class="container">
+    <div class="hdr line">
+        <div class="hdr__logo">
+            <a href="Index.html"><img src="../i/hdr-logo.png"></a>
+        </div>
+        <div class="menu">
+            <ul class="menu_list">
+                <li><a href="Products.html">ПРОДУКЦИЯ</a></li>
+                <li><a href="">КЛИЕНТСКАЯ ПОДДЕРЖКА</a>
+                    <ul>
+                        <li><a href="Faq.html">Часто задаваемые вопросы</a></li>
+                        <li><a href="#">Сравнение типов продукции</a></li>
+                        <li><a href="#">Советы по эксплуатации</a></li>
+                        <li><a href="#">Руководства по установке</a></li>
+                    </ul>
+                </li>
+                <li><a href="">О КОМПАНИИ</a></li>
+                <li><a href="">КОНТАКТЫ</a></li>
+            </ul>
+        </div>
+        <div class="search">
+                <div class="search__item"><input class="b-input" type="text" value=""/></div>
+                <a class="btn btn_grey">НАЙТИ</a>
+        </div>
+    </div>
+
+    <div class="cnt">
+        <div class="cnt__news cnt__news_main">
+            <h1>Пресс-центр</h1>
+            <a href="#">С наступлением холодов — горячие скидки!</a>
+            <h3>23 ноября 2012 г.</h3>
+            <p>На всю продукцию представленную на сайте: камины, топки, облицовки и печи предоставляются скидки до 15%!</p>
+
+            <a href="#">Расширение ассортимента топок Napoleon</a>
+            <h3>23 ноября 2012 г.</h3>
+            <p>Мы значительно расширили ассортимент топок Napoleon. С новинками топок можно ознакомиться в разделе продукция.</p>
+
+            <a href="#">Эволюция камина – захватывающая история триумфа</a>
+            <h3>23 ноября 2012 г.</h3>
+            <p>Возраст первого ископаемого очага, сложенного из камней, относится к эпохе пещерных людей, которые уже научились обращаться с огнём и познали аппетитный запах и яркий вкус жареной пищи.</p>
+
+            <a href="#">Барбекю-печь — классика уличной готовки</a>
+            <h3>23 ноября 2012 г.</h3>
+            <p>Название этого популярного устройства, скорее всего, имеет античное происхождение, когда животных жарили целиком на вертелах в специально вырытых глиняных ямах (barabicoa — огневая яма).</p>
+
+            <a href="#">Камин как эффективная альтернатива отоплению загородного коттеджа</a>
+            <h3>12 ноября 2012 г.</h3>
+            <p>И не только загородного коттеджа, но и обычного поселкового дома, расположенного вне зоны расположения бытовых газовых магистралей. </p>
+
+            <a href="#">Установка камина – кому доверить работу?</a>
+            <h3>5 ноября 2012 г.</h3>
+            <p>Строительство камина во все времена требовала особого подхода, и даже сегодня, когда в продаже имеются высокотехнологичные компоненты отопительных систем этого типа, этот процесс невозможен без строго соблюдения правил, норм и требований. </p>
+
+            <a href="#">С наступлением холодов — горячие скидки!</a>
+            <h3>23 ноября 2012 г.</h3>
+            <p>На всю продукцию представленную на сайте: камины, топки, облицовки и печи предоставляются скидки до 15%! </p>
+
+            <a href="#">Расширение ассортимента топок Napoleon</a>
+            <h3>23 ноября 2012 г.</h3>
+            <p>Мы значительно расширили ассортимент топок Napoleon. С новинками топок можно ознакомиться в разделе продукция.</p>
+
+            <a href="#">Эволюция камина – захватывающая история триумфа</a>
+            <h3>23 ноября 2012 г.</h3>
+            <p>Возраст первого ископаемого очага, сложенного из камней, относится к эпохе пещерных людей, которые уже научились обращаться с огнём и познали аппетитный запах и яркий вкус жареной пищи. </p>
+
+            <a href="#">Барбекю-печь — классика уличной готовки</a>
+            <h3>23 ноября 2012 г.</h3>
+            <p>Название этого популярного устройства, скорее всего, имеет античное происхождение, когда животных жарили целиком на вертелах в специально вырытых глиняных ямах (barabicoa — огневая яма).</p>
+            <div class="cnt__news-num-page">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <span class="cnt__news-num-page-dots">...</span>
+                <a href="#">14</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ftr-i ">
+    <div class="ftr line">
+        <div class="ftr__copyright"><span class="ftr__copyright-text">&copy; Нортех, 2012</span></div>
+        <div class="ftr__studio"><i class="ico ico_type_studio"></i><div class="ftr__studio-name"><a href="#">Создание сайта</a> —<br/> ИА Кельник</div></div>
+    </div>
+
+    <div class="coursemap">
+        <div class="coursemap__btn">
+            <div class="coursemap__btn-text"><a href="#"><i class="ico ico_type_coursemap ico_type_coursemap-active"></i><span class="coursemap__btn-dotted">Карта сайта</span></a></div>
+        </div>
+
+        <div class="coursemap__content">
+            <div class="coursemap__inside">
+                <div class="coursemap__block">
+                    <ul>
+                        <li class="coursemap_first-line"><a href="#">Продукция</a></li>
+                        <li><a href="#">Электрические камины</a></li>
+                        <li><a href="#">Газовые камины</a></li>
+                        <li><a href="#">Газовые вставки</a></li>
+                        <li><a href="#">Печи на газу</a></li>
+                        <li><a href="#">Дровяные камины</a></li>
+                        <li><a href="#">Деревянные вставки</a></li>
+                        <li><a href="#">Дровяные печи</a></li>
+                        <li><a href="#">Камины на этаноле</a></li>
+                        <li><a href="#">Паллетные камины</a></li>
+                    </ul>
+                </div>
+                <div class="coursemap__block">
+                    <ul class="coursemap__block-cntr">
+                        <li class="coursemap_first-line"><a href="#">Клиентская поддержка</a></li>
+                        <li><a href="#">Часто задаваемые вопросы</a></li>
+                        <li><a href="#">Сравнение типов продукции</a></li>
+                        <li><a href="#">Советы по эксплуатации</a></li>
+                        <li><a href="#">Руководства по установке</a></li>
+                    </ul>
+                    <ul>
+                        <li class="coursemap_first-line"><a href="#">О компании</a></li>
+                        <li><a href="#">Почему стоит выбрать Napoleon</a></li>
+                        <li><a href="#">Пресс-центр</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                    </ul>
+                </div>
+
+                <div class="coursemap__block">
+                    <ul>
+                        <li class="coursemap_first-line"><a href="#">Контакты</a></li>
+                        <li><a href="#">Где купить</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

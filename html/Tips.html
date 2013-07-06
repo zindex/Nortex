@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Nortex index</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!--[if IE 9]>
+    <link rel="stylesheet" href="../css/styleIE.css" />
+    <![endif]-->
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script>
+        $(function(){
+            $('.menu ul li').hover(
+                    function() {
+                        $(this).addClass("active");
+                        $(this).find('ul:first').stop(true, true); // останавливаем всю текущую анимацию
+                        $(this).find('ul:first').slideDown();
+                    },
+                    function() {
+                        $(this).removeClass("active");
+                        $(this).find('ul:first').slideUp('fast');
+                    }
+            );
+        })
+    </script>
+</head>
+
+<body>
+<div class="black-line"></div>
+<div class="container">
+    <div class="hdr line">
+        <div class="hdr__logo">
+            <a href="Index.html"><img src="../i/hdr-logo.png"></a>
+        </div>
+        <div class="menu">
+            <ul class="menu_list">
+                <li><a href="Products.html">ПРОДУКЦИЯ</a></li>
+                <li><a href="">КЛИЕНТСКАЯ ПОДДЕРЖКА</a>
+                    <ul>
+                        <li><a href="Faq.html">Часто задаваемые вопросы</a></li>
+                        <li><a href="#">Сравнение типов продукции</a></li>
+                        <li><a href="#">Советы по эксплуатации</a></li>
+                        <li><a href="#">Руководства по установке</a></li>
+                    </ul>
+                </li>
+                <li><a href="">О КОМПАНИИ</a></li>
+                <li><a href="">КОНТАКТЫ</a></li>
+            </ul>
+        </div>
+        <div class="search">
+                <div class="search__item"><input class="b-input" type="text" value=""/></div>
+                <a class="btn btn_grey">НАЙТИ</a>
+        </div>
+    </div>
+
+    <div class="cnt">
+        <div class="cnt__main line">
+            <div class="cnt__main_faq-head">Руководства по установке</div>
+            <div class="sidebar sidebar-main">
+                <div class="sidebar-inside">
+                    <div class="sidebar-header ">Категории
+                    </div>
+                    <div class="sidebar-faq-link">
+                        <ul class="sidebar-tips" >
+                            <li><a class="sidebar-tips-firstline sidebar-tips-active" href="#">Все(32)</a></li>
+                        </ul>
+                        <ul class="sidebar-tips" >
+                            <li><a class="sidebar-tips-firstline" href="#">Камины (21)</a></li>
+                                <ul class="sidebar-tips">
+                                    <li><a href="#" class="">на газу (3)</a></li>
+                                    <li><a href="#">электрические (7)</a></li>
+                                    <li><a href="#">дровяные (4)</a></li>
+                                    <li><a href="#">на этаноле (1)</a></li>
+                                    <li><a href="#">уличные (6)</a></li>
+                                 </ul>
+                        </ul>
+                        <ul class="sidebar-tips" >
+                            <li><a class="sidebar-tips-firstline" href="#">Печи (19)</a></li>
+                                <ul class="sidebar-tips" >
+                                    <li><a href="#">на газу (10)</a></li>
+                                    <li><a href="#">дровяные (3)</a></li>
+                                    <li><a href="#">паллетные (6)</a></li>
+                                </ul>
+                        </ul>
+                        <ul class="sidebar-tips" >
+                            <li><a class="sidebar-tips-firstline" href="#">Уличные обогреватели (3)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cnt__case cnt__case-tips">
+                <div class="cnt__case-tips-arrow"><img src="../i/arrow-tips.png"></div>
+                <h2>Все руководства</h2>
+                <h3>Выберите категорию, чтобы сузить круг поиска.</h3>
+
+                <div class="cnt__case-tips-block">
+                    <a class="cnt__case-tips-pic" href="#"><img src="../i/product-n-ico3.jpg"></a>
+                    <div class="cnt__case-tips-item">
+                        <h4>Инструкция</h4>
+                        <a href="#">Установка электрического камина EFL80</a>
+                    </div>
+                </div>
+                <div class="cnt__case-tips-block">
+                    <a class="cnt__case-tips-pic" href="#"><img src="../i/product-n-ico2.jpg"></a>
+                    <div class="cnt__case-tips-item">
+                        <h4>Брошюра</h4>
+                        <a href="#">Электрический камин EFL80</a>
+                    </div>
+                </div>
+                <div class="cnt__case-tips-block">
+                    <a class="cnt__case-tips-pic" href="#"><img src="../i/product-n-ico1.jpg"></a>
+                    <div class="cnt__case-tips-item">
+                        <h4>Спецификация</h4>
+                        <a href="#">Техническое описание электрического камина EFL80</a>
+                    </div>
+                </div>
+                <div class="cnt__case-tips-block">
+                    <a class="cnt__case-tips-pic" href="#"><img src="../i/product-n-ico3.jpg"></a>
+                    <div class="cnt__case-tips-item">
+                        <h4>Инструкция</h4>
+                        <a href="#">Установка электрического камина EFL95</a>
+                    </div>
+                </div>
+                <div class="cnt__case-tips-block">
+                    <a class="cnt__case-tips-pic" href="#"><img src="../i/product-n-ico2.jpg"></a>
+                    <div class="cnt__case-tips-item">
+                        <h4>Брошюра</h4>
+                        <a href="#">Электрический камин EFL95</a>
+                    </div>
+                </div>
+                <div class="cnt__case-tips-block">
+                    <a class="cnt__case-tips-pic" href="#"><img src="../i/product-n-ico1.jpg"></a>
+                    <div class="cnt__case-tips-item">
+                        <h4>Спецификация</h4>
+                        <a href="#">Техническое описание электрического камина EFL95</a>
+                    </div>
+                </div>
+                <div class="cnt__case-tips-block">
+                    <a class="cnt__case-tips-pic" href="#"><img src="../i/product-n-ico3.jpg"></a>
+                    <div class="cnt__case-tips-item">
+                        <h4>Инструкция</h4>
+                        <a href="#">Установка дровяного камина DW-100</a>
+                    </div>
+                </div>
+                <div class="cnt__case-tips-block">
+                    <a class="cnt__case-tips-pic" href="#"><img src="../i/product-n-ico2.jpg"></a>
+                    <div class="cnt__case-tips-item">
+                        <h4>Брошюра</h4>
+                        <a href="#">Дровяной камин DW-100</a>
+                    </div>
+                </div>
+                <div class="cnt__case-tips-block">
+                    <a class="cnt__case-tips-pic" href="#"><img src="../i/product-n-ico1.jpg"></a>
+                    <div class="cnt__case-tips-item">
+                        <h4>Спецификация</h4>
+                        <a href="#">Описание дровяного камина DW-100</a>
+                    </div>
+                </div>
+
+                <div class="cnt__news-num-page">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <span>...</span>
+                    <a href="#">14</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="ftr-i ">
+    <div class="ftr line">
+        <div class="ftr__copyright"><span class="ftr__copyright-text">&copy; Нортех, 2012</span></div>
+        <div class="ftr__studio"><i class="ico ico_type_studio"></i><div class="ftr__studio-name"><a href="#">Создание сайта</a> —<br/> ИА Кельник</div></div>
+    </div>
+
+    <div class="coursemap">
+        <div class="coursemap__btn">
+            <div class="coursemap__btn-text"><a href="#"><i class="ico ico_type_coursemap ico_type_coursemap-active"></i><span class="coursemap__btn-dotted">Карта сайта</span></a></div>
+        </div>
+
+        <div class="coursemap__content">
+            <div class="coursemap__inside">
+                <div class="coursemap__block">
+                    <ul>
+                        <li class="coursemap_first-line"><a href="#">Продукция</a></li>
+                        <li><a href="#">Электрические камины</a></li>
+                        <li><a href="#">Газовые камины</a></li>
+                        <li><a href="#">Газовые вставки</a></li>
+                        <li><a href="#">Печи на газу</a></li>
+                        <li><a href="#">Дровяные камины</a></li>
+                        <li><a href="#">Деревянные вставки</a></li>
+                        <li><a href="#">Дровяные печи</a></li>
+                        <li><a href="#">Камины на этаноле</a></li>
+                        <li><a href="#">Паллетные камины</a></li>
+                    </ul>
+                </div>
+                <div class="coursemap__block">
+                    <ul class="coursemap__block-cntr">
+                        <li class="coursemap_first-line"><a href="#">Клиентская поддержка</a></li>
+                        <li><a href="#">Часто задаваемые вопросы</a></li>
+                        <li><a href="#">Сравнение типов продукции</a></li>
+                        <li><a href="#">Советы по эксплуатации</a></li>
+                        <li><a href="#">Руководства по установке</a></li>
+                    </ul>
+                    <ul>
+                        <li class="coursemap_first-line"><a href="#">О компании</a></li>
+                        <li><a href="#">Почему стоит выбрать Napoleon</a></li>
+                        <li><a href="#">Пресс-центр</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                    </ul>
+                </div>
+
+                <div class="coursemap__block">
+                    <ul>
+                        <li class="coursemap_first-line"><a href="#">Контакты</a></li>
+                        <li><a href="#">Где купить</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

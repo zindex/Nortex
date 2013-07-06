@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Nortex index</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!--[if IE 9]>
+    <link rel="stylesheet" href="../css/styleIE.css" />
+    <![endif]-->
+
+    <script>
+        $(function(){
+            $('.menu ul li').hover(
+                    function() {
+                        $(this).addClass("active");
+                        $(this).find('ul:first').stop(true, true); // останавливаем всю текущую анимацию
+                        $(this).find('ul:first').slideDown();
+                    },
+                    function() {
+                        $(this).removeClass("active");
+                        $(this).find('ul:first').slideUp('fast');
+                    }
+            );
+        })
+    </script>
+</head>
+
+<body>
+<div class="black-line"></div>
+<div class="container">
+    <div class="hdr line">
+        <div class="hdr__logo">
+            <a href="Index.html"><img src="../i/hdr-logo.png"></a>
+        </div>
+        <div class="menu">
+            <ul class="menu_list">
+                <li><a href="Products.html">ПРОДУКЦИЯ</a></li>
+                <li><a href="#">КЛИЕНТСКАЯ ПОДДЕРЖКА</a>
+                    <ul>
+                        <li><a href="Faq.html">Часто задаваемые вопросы</a></li>
+                        <li><a href="#">Сравнение типов продукции</a></li>
+                        <li><a href="#">Советы по эксплуатации</a></li>
+                        <li><a href="#">Руководства по установке</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">О КОМПАНИИ</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <div class="search__item"><input class="b-input" type="text" value=""/></div>
+            <a class="btn btn_grey">НАЙТИ</a>
+        </div>
+    </div>
+
+    <div class="cnt">
+        <div class="cnt__main cnt__main_categories line">
+            <div class="sidebar">
+                <div class="sidebar-inside-prod-n">
+                    <div class="sidebar-product-n sidebar-categories">
+                        <div class="sidebar-name sidebar-name-categories">Продукция</div>
+                        <h2>Камины Наполеон</h2>
+                        <p>Годы исследований, разработки и тестирования повысили оптимальную производительность и позволили многим продуктам Наполеона достичь самых высоких оценок эффективности на рынке. Продукция Наполеона превосходит отраслевые стандарты не только внешне, но и по производительности и эффективности.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cnt__case cnt__case_product-n cnt__case-product-pic">
+                <img src="../i/categories01.jpg">
+            </div>
+        </div>
+
+        <div class="product-list">
+            <div class="product-list__text">
+                <div class="product-list___text-hdr product-list___text-categories">Камины</div>
+            </div>
+
+            <div class="product-list__block product-list__block_categories">
+                <a href="#"><img src="../i/categories02.jpg"></a>
+                <div class="product-list-header">
+                    <a class="b-link" href="#"><span class="b-link__inner">Камины на газу</span></a>
+                </div>
+                <div class="product-list__block-text">
+                    <p>При установке газового камина вы можете быть уверенными в комфорте, который будет радовать вас очень долго</p>
+                </div>
+            </div>
+            <div class="product-list__block product-list__block_categories">
+                <a href="#"><img src="../i/product02.jpg"></a>
+                <div class="product-list-header">
+                    <a class="b-link" href="#"><span class="b-link__inner">Электрические камины</span></a>
+                </div>
+                <div class="product-list__block-text">
+                    <p>Электрические камины Наполеон — это внешний вид классических камыенных каминов и современные технологии</p>
+                </div>
+            </div>
+            <div class="product-list__block product-list__block_categories">
+                <a href="#"><img src="../i/product-list-block05.jpg"></a>
+                <div class="product-list-header">
+                    <a class="b-link" href="#"><span class="b-link__inner">Дровяные камины</span></a>
+                </div>
+                <div class="product-list__block-text">
+                    <p></p>
+                </div>
+            </div>
+            <div class="product-list__block product-list__block_categories">
+                <a href="#"><img src="../i/categories03.jpg"></a>
+                <div class="product-list-header">
+                    <a class="b-link" href="#"><span class="b-link__inner">Камины на этаноле</span></a>
+                </div>
+                <div class="product-list__block-text">
+                    <p>Экологически чистые камины</p>
+                </div>
+            </div>
+            <div class="product-list__block product-list__block_categories">
+                <a href="#"><img src="../i/categories04.jpg"></a>
+                <div class="product-list-header">
+                    <a class="b-link" href="#"><span class="b-link__inner">Уличные камины</span></a>
+                </div>
+                <div class="product-list__block-text">
+                    <p>Обновите внешний вид своего дворика, добавив уличный камин</p>
+                </div>
+            </div>
+            <div class="product-list__block product-list__block_categories">
+                <a href="#"><img src="../i/categories05.jpg"></a>
+                <div class="product-list-header">
+                    <a class="b-link" href="#"><span class="b-link__inner">Gas Log Sets</span></a>
+                </div>
+                <div class="product-list__block-text">
+                    <p>Napoleon’s FIBERGLOW™ gas log sets create the ambiance your home deserves with our exclusive PHAZER® log sets and PHAZERAMIC™ </p>
+                </div>
+            </div>
+            <div class="product-list__block product-list__block_categories">
+                <a href="#"><img src="../i/categories06.jpg"></a>
+                <div class="product-list-header">
+                    <a class="b-link" href="#"><span class="b-link__inner">Каминная доска</span></a>
+                </div>
+                <div class="product-list__block-text">
+                    <p>Ровная посадка и бесшовная технология — главные достоинства нашей каминной доски</p>
+                </div>
+            </div>
+            <div class="product-list__block product-list__block_categories">
+                <a href="#"><img src="../i/categories07.jpg"></a>
+                <div class="product-list-header">
+                    <a class="b-link" href="#"><span class="b-link__inner">Аксессуары</span></a>
+                </div>
+                <div class="product-list__block-text">
+                    <p>Выберите к камину необходимые аксессуары</p>
+                </div>
+            </div>
+            <div class="product-list__text">
+                <div class="product-list___text-hdr product-list___text-categories">Печи</div>
+            </div>
+            <div class="product-list__block product-list__block_categories">
+                <a href="#"><img src="../i/categories08.jpg"></a>
+                <div class="product-list-header">
+                    <a class="b-link" href="#"><span class="b-link__inner">Печи на газу</span></a>
+                </div>
+                <div class="product-list__block-text">
+                    <p>Печи изготовленны по строгим стандартам качества для вашего спокойствия</p>
+                </div>
+            </div>
+            <div class="product-list__block product-list__block_categories">
+                <a href="#"><img src="../i/product-list-block07.jpg"></a>
+                <div class="product-list-header">
+                    <a class="b-link" href="#"><span class="b-link__inner">Дровяные печи</span></a>
+                </div>
+                <div class="product-list__block-text">
+                    <p>Рабочие лошадки отрасли. Прослужат долго и надежно обогреют ваш дом</p>
+                </div>
+            </div>
+            <div class="product-list__block product-list__block_categories">
+                <a href="#"><img src="../i/product-list-block09.jpg"></a>
+                <div class="product-list-header">
+                    <a class="b-link" href="#"><span class="b-link__inner">Паллетные печи</span></a>
+                </div>
+                <div class="product-list__block-text">
+                    <p>Паллеты преобразуют ваш камин в надежный исотчник отопления</p>
+                </div>
+            </div>
+            <div class="product-list__text">
+                <div class="product-list___text-hdr product-list___text-categories">Вставки</div>
+            </div>
+            <div class="product-list__block product-list__block_categories">
+                <a href="#"><img src="../i/categories09.jpg"></a>
+                <div class="product-list-header">
+                    <a class="b-link" href="#"><span class="b-link__inner">Вставки на на газу</span></a>
+                </div>
+                <div class="product-list__block-text">
+                    <p>Печи изготовленны по строгим стандартам качества для вашего спокойствия</p>
+                </div>
+            </div>
+            <div class="product-list__block product-list__block_categories">
+                <a href="#"><img src="../i/product-list-block06.jpg"></a>
+                <div class="product-list-header">
+                    <a class="b-link" href="#"><span class="b-link__inner">Wood Inserts</span></a>
+                </div>
+                <div class="product-list__block-text">
+                    <p>Печи изготовленны по строгим стандартам качества для вашего спокойствия</p>
+                </div>
+            </div>
+            <div class="product-list__block product-list__block_categories">
+                <a href="#"><img src="../i/categories10.jpg"></a>
+                <div class="product-list-header">
+                    <a class="b-link" href="#"><span class="b-link__inner">Pellet Inserts</span></a>
+                </div>
+                <div class="product-list__block-text">
+                    <p>Печи изготовленны по строгим стандартам качества для вашего спокойствия</p>
+                </div>
+            </div>
+            <div class="product-list__block product-list__block_categories">
+                <a href="#"><img src="../i/categories11.jpg"></a>
+                <div class="product-list-header">
+                    <a class="b-link" href="#"><span class="b-link__inner">Gas Log Sets</span></a>
+                </div>
+                <div class="product-list__block-text">
+                    <p>Печи изготовленны по строгим стандартам качества для вашего спокойствия</p>
+                </div>
+            </div>
+            <div class="product-list__text">
+                <div class="product-list___text-hdr product-list___text-categories">Уличное оборудование</div>
+            </div>
+            <div class="product-list__block product-list__block_categories">
+                <a href="#"><img src="../i/categories12.jpg"></a>
+                <div class="product-list-header">
+                    <a class="b-link" href="#"><span class="b-link__inner">Уличные камины</span></a>
+                </div>
+                <div class="product-list__block-text">
+                    <p></p>
+                </div>
+            </div>
+            <div class="product-list__block product-list__block_categories">
+                <a href="#"><img src="../i/categories13.jpg"></a>
+                <div class="product-list-header">
+                    <a class="b-link" href="#"><span class="b-link__inner">Уличный обогреватель</span></a>
+                </div>
+                <div class="product-list__block-text">
+                    <p></p>
+                </div>
+            </div>
+            <div class="product-list__block product-list__block_categories">
+                <a href="#"><img src="../i/categories14.jpg"></a>
+                <div class="product-list-header">
+                    <a class="b-link" href="#"><span class="b-link__inner">Патиофлеймс</span></a>
+                </div>
+                <div class="product-list__block-text">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ftr-i ">
+    <div class="ftr line">
+        <div class="ftr__copyright"><span class="ftr__copyright-text">&copy; Нортех, 2012</span></div>
+        <div class="ftr__studio"><i class="ico ico_type_studio"></i><div class="ftr__studio-name"><a href="#">Создание сайта</a> —<br/> ИА Кельник</div></div>
+    </div>
+
+    <div class="coursemap">
+        <div class="coursemap__btn">
+            <div class="coursemap__btn-text"><a href="#"><i class="ico ico_type_coursemap ico_type_coursemap-active"></i><span class="coursemap__btn-dotted">Карта сайта</span></a></div>
+        </div>
+
+        <div class="coursemap__content">
+            <div class="coursemap__inside">
+                <div class="coursemap__block">
+                    <ul>
+                        <li class="coursemap_first-line"><a href="#">Продукция</a></li>
+                        <li><a href="#">Электрические камины</a></li>
+                        <li><a href="#">Газовые камины</a></li>
+                        <li><a href="#">Газовые вставки</a></li>
+                        <li><a href="#">Печи на газу</a></li>
+                        <li><a href="#">Дровяные камины</a></li>
+                        <li><a href="#">Деревянные вставки</a></li>
+                        <li><a href="#">Дровяные печи</a></li>
+                        <li><a href="#">Камины на этаноле</a></li>
+                        <li><a href="#">Паллетные камины</a></li>
+                    </ul>
+                </div>
+                <div class="coursemap__block">
+                    <ul class="coursemap__block-cntr">
+                        <li class="coursemap_first-line"><a href="#">Клиентская поддержка</a></li>
+                        <li><a href="#">Часто задаваемые вопросы</a></li>
+                        <li><a href="#">Сравнение типов продукции</a></li>
+                        <li><a href="#">Советы по эксплуатации</a></li>
+                        <li><a href="#">Руководства по установке</a></li>
+                    </ul>
+                    <ul>
+                        <li class="coursemap_first-line"><a href="#">О компании</a></li>
+                        <li><a href="#">Почему стоит выбрать Napoleon</a></li>
+                        <li><a href="#">Пресс-центр</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                    </ul>
+                </div>
+
+                <div class="coursemap__block">
+                    <ul>
+                        <li class="coursemap_first-line"><a href="#">Контакты</a></li>
+                        <li><a href="#">Где купить</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
